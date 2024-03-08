@@ -80,19 +80,7 @@ class HomePage extends StatelessWidget {
               child: Divider(),
             ),
 
-            const SizedBox(
-              height: 24,
-            ),
-
             // Items
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24.0),
-              child: Text(
-                'Fresh Items',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
-
             Expanded(child: Consumer<CartModel>(
               builder: (context, value, child) {
                 return GridView.builder(
